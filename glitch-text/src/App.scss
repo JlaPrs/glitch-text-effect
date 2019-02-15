@@ -1,22 +1,16 @@
+@import "./style/glitch-text";
+@import "./style/input";
+
+// reset style
+html { box-sizing: border-box; font-size: 10px; }
+*, *:before, *:after { box-sizing: inherit; }
+body, ul, li  { margin: 0; padding: 0; }
+input { border-style: none; background: transparent; outline: none; }
+button { padding: 0; background: none; border: none; outline: none; }
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  //background-color: #282c34;
 }
 
 .App-link {
