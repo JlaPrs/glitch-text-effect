@@ -24,13 +24,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App" id="app">
-        <header className="App-header">
-            <InputChanges changeTitle={this.changeTitle} title={this.state.title} />
-
-            <p>image by: Lewis Roberts</p>
-        </header>
-      </div>
+        <div className="glitch-app" id="app">
+          <InputChanges changeTitle={this.changeTitle} title={this.state.title} />
+          <p className="dp-img-by">Background-image by: Lewis Roberts</p>
+        </div>
     );
   }
 }

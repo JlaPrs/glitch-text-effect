@@ -8,13 +8,35 @@ body, ul, li  { margin: 0; padding: 0; }
 input { border-style: none; background: transparent; outline: none; }
 button { padding: 0; background: none; border: none; outline: none; }
 
-.App {
-  text-align: center;
-  //background-color: #282c34;
+#app {
+  background: rgb(10,10,10);
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(10,10,10,.6),rgba(0,0,0,.9)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px),
+  url('https://images.unsplash.com/photo-1544401447-4d2b8ab25808?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.glitch-effect-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dp-img-by {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  font-size: 14px;
 }
 
 @keyframes App-logo-spin {
