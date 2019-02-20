@@ -1,8 +1,8 @@
 # glitch-text-effect
 Only SCSS: Glitch effect with some text
 
-![alt text][logo]
+![alt text][img]
 
-[logo]: https://github.com/jlaprs/markdown-here/raw/master/src/img/Glitch-Effect.jpg "Logo Title Text 2"
+[img]: https://github.com/JlaPrs/glitch-text-effect/blob/master/glitch-text/src/img/Glitch-Effect.jpg "Glitch Text Effect with Input for changing text"
 
 Test
