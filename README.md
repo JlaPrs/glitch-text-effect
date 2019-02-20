@@ -1,7 +1,7 @@
 # glitch-text-effect //ONLY SCSS
 Just type something into the input field and check the glitch effect for your own text.
 
-Wanna Try: [DEMO](http://juliaprimus.de/my-app/) 
+Wanna Try: [DEMO](http://juliaprimus.de/glitch/) 
 
 ![alt glitch-effect][img]
 
