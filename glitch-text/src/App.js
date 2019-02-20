@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import InputChanges from './components/InputChanges';
+import Contacts from "./components/Contacts";
 
 import './App.scss';
 
@@ -26,6 +27,7 @@ class App extends Component {
     return (
         <div className="glitch-app" id="app">
           <InputChanges changeTitle={this.changeTitle} title={this.state.title} />
+            <Contacts/>
           <p className="dp-img-by">Background-image by: Lewis Roberts</p>
         </div>
     );
