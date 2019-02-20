@@ -10,15 +10,14 @@
 .glitch {
   animation: glitch-skew 1s infinite linear alternate-reverse;
   color: white;
-  //ToDo: Effect not the same size as general font / old 4em
-  font-size: 12em;
+  font-size: 4em;
   letter-spacing: .1em;
   position: relative;
   text-transform: uppercase;
 
   &::before{
     @include glitchCopy;
-    animation: glitch-anim 5s infinite linear alternate-reverse;
+    animation: glitch-animation 5s infinite linear alternate-reverse;
     clip: rect(44px, 450px, 56px, 0);
     left: 2px;
     text-shadow: -2px 0 #ff00c1;
@@ -26,24 +25,14 @@
 
   &::after {
     @include glitchCopy;
-    animation: glitch-anim2 1s infinite linear alternate-reverse;
+    animation: glitch-animation 1s infinite linear alternate-reverse;
     left: -2px;
     text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
   }
 }
 
-@keyframes glitch-anim {
-  $steps: 20;
-  @for $i from 0 through $steps {
-    #{percentage($i*(1/$steps))} {
-      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
-      transform: skew((random(100) / 100) + deg);
-    }
-  }
-}
-
 // Same deal, just duplicated for ultra randomness.
-@keyframes glitch-anim2 {
+@keyframes glitch-animation {
   $steps: 20;
   @for $i from 0 through $steps {
     #{percentage($i*(1/$steps))} {
